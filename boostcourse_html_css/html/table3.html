@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>table3</title>
+    <style media="screen">
+      table, th, td {
+        border: 1px solid;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 테이블의 또다른 속성 col, colgroup, span 응용 -->
+    <table>
+      <caption>Specification values</caption>
+      <colgroup>
+        <col>
+        <col span="1" style="background-color:pink">
+        <col span="2">
+        <col span="1" style="background-color:yellow">
+      </colgroup>
+      <thead>
+        <tr>
+          <th rowspan="2" scope="col">Grade.</th>
+          <th rowspan="2" scope="col">Point.</th>
+          <th colspan="2" scope="col">Strength.</th>
+          <th rowspan="2" scope="col">Percent.</th>
+        </tr>
+        <tr>
+          <th scope="col">kg/mm</th>
+          <th scope="col">lb/in</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">Hard</td>
+          <td>0.45</td>
+          <td>56.2</td>
+          <td>80,000</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td scope="row">Medium</td>
+          <td>0.45</td>
+          <td>49.2</td>
+          <td>70,000</td>
+          <td>25</td>
+        </tr>
+        <tr>
+          <td scope="row">Soft</td>
+          <td>0.45</td>
+          <td>42.2</td>
+          <td>60,000</td>
+          <td>30</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
