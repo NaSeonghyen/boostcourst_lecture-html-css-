@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>virtual selector4</title>
+    <style media="screen">
+      /* p:before {
+        color:red;
+        content: "before 가상 요소를 활용한 내용";
+      }
+      p:after {
+        color:blue;
+        content: "after 가상 요소를 활용한 내용";
+      } */
+      /* p:first-line {
+        color: yellow;
+      } */
+      p::first-letter{
+        font-size: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </body>
+</html>
